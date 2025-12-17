@@ -38,7 +38,7 @@
                 <p>We value your feedback and continuously strive to improve our services. Whether you have suggestions, compliments, or concerns, we want to hear from you.</p>
               </div>
 
-              <form class="contact-form">
+              <form class="contact-form" id="contact-form">
                 <div class="form-group">
                   <label for="name">Name</label>
                   <input type="text" id="name" name="name" placeholder="Your full name" />
@@ -92,7 +92,7 @@
                   </label>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                <button type="submit" id="contact-form-submit" class="btn btn-primary">Submit Feedback</button>
               </form>
             </div>
           </div>
@@ -129,5 +129,23 @@
     </footer>
 
         <script src="./sdkWebConfig.js"></script>
+
+    <script>
+      const form = document.getElementById('contact-form');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Example: collect form data
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        console.log('Feedback submitted:', data);
+
+        // Optional: show success message or reset
+        // form.reset();
+      });
+    </script>
+
   </body>
 </html>

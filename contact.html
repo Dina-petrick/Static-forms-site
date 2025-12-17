@@ -58,7 +58,7 @@
             </div>
 
             <div class="form-container">
-              <form class="contact-form">
+              <form class="contact-form" id="contact-form">
                 <div class="form-group">
                   <label for="fullName">Full Name</label>
                   <input type="text" id="fullName" name="fullName" placeholder="John Doe" />
@@ -121,5 +121,21 @@
     </footer>
 
         <script src="./sdkWebConfig.js"></script>
+        <script>
+          const form = document.getElementById('contact-form');
+
+          form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Example: collect form data
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            console.log('contact submitted:', data);
+
+            // Optional: show success message or reset
+            // form.reset();
+          });
+        </script>
   </body>
 </html>
