@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Feedback - TechVision Solutions</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">TechVision</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="feedback.html" class="active">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1>Share Your Feedback</h1>
+          <p>Your opinion matters to us. Help us improve our services.</p>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <div class="container">
+          <div class="form-wrapper centered">
+            <div class="form-container">
+              <div class="feedback-intro">
+                <p>We value your feedback and continuously strive to improve our services. Whether you have suggestions, compliments, or concerns, we want to hear from you.</p>
+              </div>
+
+              <form class="contact-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your full name" />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="your.email@example.com" />
+                </div>
+
+                <div class="form-group">
+                  <label for="rating">Overall Rating</label>
+                  <select id="rating" name="rating">
+                    <option value="">Select a rating</option>
+                    <option value="5">Excellent - 5 stars</option>
+                    <option value="4">Very Good - 4 stars</option>
+                    <option value="3">Good - 3 stars</option>
+                    <option value="2">Fair - 2 stars</option>
+                    <option value="1">Poor - 1 star</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="category">Feedback Category</label>
+                  <input type="text" id="category" name="category" placeholder="e.g., Customer Service, Product Quality, Website" />
+                </div>
+
+                <div class="form-group">
+                  <label for="service">Service Used</label>
+                  <select id="service" name="service">
+                    <option value="">Select a service</option>
+                    <option value="cloud">Cloud Solutions</option>
+                    <option value="security">Cybersecurity</option>
+                    <option value="analytics">Data Analytics</option>
+                    <option value="strategy">Digital Strategy</option>
+                    <option value="development">Custom Development</option>
+                    <option value="support">Enterprise Support</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="comments">Comments</label>
+                  <textarea id="comments" name="comments" rows="6" placeholder="Please share your detailed feedback, suggestions, or concerns..."></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="followup" />
+                    <span>I would like to be contacted regarding this feedback</span>
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit Feedback</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>TechVision Solutions</h4>
+            <p>Innovative technology services for modern businesses.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <p>Email: info@techvision.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 TechVision Solutions. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
